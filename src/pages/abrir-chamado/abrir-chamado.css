@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+  --cor-principal: #FF6816;
+  --cor-giro: #FE0000;
+}
+
+*{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  outline: none;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headerPrincipal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerPrincipal img{
+  width: 100%;
+}
+
+.headerPrincipal ul{
+  width: 40%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-weight: 500;
+}
+
+.headerPrincipal ul li{
+  cursor: pointer;
+  height: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px solid white;
+  transition: .5s ease-in-out;
+}
+
+.headerPrincipal ul a{
+  text-decoration: none;
+  transition: .5s ease-in-out;
+  color: black;
+}
+
+.headerPrincipal ul li:hover{
+  transition: .5s ease-in-out;
+  color: var(--cor-principal) !important;
+  border-bottom: 1px solid var(--cor-principal);
+  cursor: pointer;
+}
+
+.headerPrincipal ul li:hover + .headerPrincipal ul li a {
+  color: var(--cor-principal);
+}
+
+.headerPrincipal button{
+
+  color: white;
+  background-color: var(--cor-principal);
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 15px 20px;
+}
+
+.optionList{
+  display: flex;
+  gap: 10px;
+}
+
+.optionList button{
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.optionList button.active{
+  background-color: #FF6816;
+  color: white;
+}
+
+.optionList button:hover{
+  transition: .5s ease-in-out;
+  background-color: #FF6816;
+  color: white;
+}
+
+.imageHeader{
+  width: 300px;
+}
+
+.formOptions{
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-ti{
+  width: 50%;
+}
+
+.form-ti form{
+  padding-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-right: 20px solid #ffffff;
+  border-bottom: 20px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow:  rgba(0, 0, 0, 0.079) 0px 0px 25px;
+  border-radius: 25px;
+}
+
+#sendForm{
+  background-color: var(--cor-principal);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+
+.form-ti form label{
+  color: rgba(0, 0, 0, 0.903);
+  width: 90%;
+  padding: 15px;
+  font-size: 16px;
+  gap: 7px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.form-ti form label input{
+  height: 50px;
+  border-radius: 40px;
+  padding-left: 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.044);
+  border: none;
+}
+
+
+.form-ti form label textarea{
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.044);
+  border: none;
+}
+
+.spanOfLabel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  gap: 7px;
+  font-size: 15px;
+}
+
+
+
+/* FORMULARIO MANUTENÇÃO */
+
+.form-manutencao{
+  width: 50%;
+}
+
+.form-manutencao form{
+  padding-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-right: 20px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow:  rgba(0, 0, 0, 0.079) 0px 0px 25px;
+  border-radius: 25px;
+}
+
+.form-manutencao form label{
+  color: rgba(0, 0, 0, 0.903);
+  width: 90%;
+  padding: 15px;
+  font-size: 16px;
+  gap: 7px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.form-manutencao form label input{
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.044);
+  border: none;
+}
+
+
+.form-manutencao form label textarea{
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.044);
+  border: none;
+}
+
+.spanOfLabel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  gap: 7px;
+  font-size: 15px;
+}
+
+.spanOfLabel svg{
+  fill: #ff6816c4;
+  font-size: 13px;
+}
